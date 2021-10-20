@@ -1,13 +1,13 @@
-def vowels(input_string):
-	vowels = ["a", "e", "i", "o", "u"]
+def vowels_in_a_word(given_word):
+	vowel_list = ["a", "e", "i", "o", "u"]
+	given_word = given_word.lower()
 	found_vowels = ""
-	input_string = input_string.lower()
 
-	for letter in input_string:
-		if letter in vowels and letter not in found_vowels:
+	for letter in given_word:
+		if letter in vowel_list and letter not in found_vowels:
 			found_vowels += f"{letter}, "
 
-	return print(f"Vowels: {found_vowels[0:-2]}.")
+	return print(f"Vowels: {found_vowels[:-2]}.")
 
-vowels("Umuzi")
-vowels("Victor")
+vowels_in_a_word("Umuzi")
+vowels_in_a_word("Victor")

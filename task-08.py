@@ -3,16 +3,16 @@ def number_to_time(number):
 	minutes = number - hours * 60
 
 	if hours == 0 or hours > 1:
-		hour_output = f"{hours} hours"
+		 hour_name = f"{hours} hours"
 	else:
-		hour_output = f"{hours} hour"
+		 hour_name = f"{hours} hour"
 
 	if minutes == 0 or minutes > 1:
-		minute_output = f", {minutes} minutes"
+		 minute_name = f"{minutes} minutes"
 	else:
-		minute_output = f", {minutes} minute"
+		 minute_name = f"{minutes} minute"
 
-	return print(hour_output + minute_output)
+	return print(f"{hour_name}, {minute_name}")
 
 number_to_time(0)
 number_to_time(60)
